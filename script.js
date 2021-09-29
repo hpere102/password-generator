@@ -1,4 +1,6 @@
 // Assignment code here
+
+// global variables
 var passwordLength;
 var upperCaseConfirm;
 var lowerCaseConfirm;
@@ -59,7 +61,7 @@ function generatePassword() {
   
 // none have true choices
 if (!upperCaseConfirm && !lowerCaseConfirm && !specialConfirm && !numberConfirm) {
-  choices = alert("Invalid choice");
+  choices = alert("Please try again.");
 
 // each have 4 true choices
 } else if (upperCaseConfirm && lowerCaseConfirm && specialConfirm && numberConfirm) {
@@ -128,17 +130,19 @@ if (!upperCaseConfirm && !lowerCaseConfirm && !specialConfirm && !numberConfirm)
 
 };
 
-var passwordBlank = [];
+// this variable wont add upp each return and will only show the ammount of characters selected every time a password is generated
+var passwordEl = [];
 
-//loop
+// loop
 for (var i = 0; i < passwordLength; i++) {
   var allChoices = choices[Math.floor(Math.random() * choices.length)];
-  passwordBlank.push(allChoices);
+  passwordEl.push(allChoices);
   console.log(choices);
 }
-
-var password = passwordBlank.join("");
-console.log("Your Pasword is: " + password);
+// this shows password on the website
+var password = passwordEl.join("");
+console.log("Your new password is: " + password);
 return password;
+
 
 };
