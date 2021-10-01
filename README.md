@@ -4,7 +4,7 @@ Description of password generator.
 
 https://hpere102.github.io/password-generator/
 
-![Website layout](password-generator/assets/images/screencapture-hpere102-github-io-password-generator-2021-10-01-16_24_26.png)
+![Website layout](password-generator/assets/images/password-gen-screenshot.png)
 
 ## About this website
 
