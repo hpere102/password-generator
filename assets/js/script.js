@@ -133,8 +133,9 @@ if (!upperCaseChoice && !lowerCaseChoice && !specialChoice&& !numberChoice) {
 // loop
 for (var i = 0; i < passwordLength; i++) {
   var choiceBank = choices[Math.floor(Math.random() * choices.length)];
-  passwordTextArea.push(choiceBank)
   console.log(choices);
+  passwordTextArea.push(choiceBank)
+  
 }
 // this shows password on website inside inside text area
 var password = passwordTextArea.join("");
